@@ -2,3 +2,5 @@
 .idea
 .tox
 .egg-info
+build
+dist
