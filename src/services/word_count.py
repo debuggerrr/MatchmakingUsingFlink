@@ -1,5 +1,6 @@
 from pyflink.datastream.stream_execution_environment import StreamExecutionEnvironment, RuntimeExecutionMode
 from pyflink.common import Types
+from pyflink.datastream.functions import SinkFunction
 
 
 class WordCount(object):
@@ -17,7 +18,5 @@ class WordCount(object):
         word_count.print()
         self.env.execute("some-name")
 
-
-
-
-WordCount(StreamExecutionEnvironment.get_execution_environment()).word_count(["ABC is a good boy. ABC works for an XYZ org"])
+WordCount(StreamExecutionEnvironment.get_execution_environment()).word_count(
+    ["ABC is a good boy. ABC works for an XYZ org"])
