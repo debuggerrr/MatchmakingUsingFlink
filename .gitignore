@@ -1,0 +1,6 @@
+# Default ignored files
+.idea
+.tox
+.egg-info
+build
+dist
